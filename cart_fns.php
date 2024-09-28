@@ -43,7 +43,7 @@ function total_items($arr)
         if (is_array($arr)){
             foreach ($arr as $id => $qty ){
 
-                $numItems = $numItems + $qty;
+                $numItems +=$qty;
             }
         }
         return $numItems;
@@ -71,7 +71,7 @@ function  total_price($arr)
 
                 $product = $res->fetch();
 
-                $total_price = $total_price + $product['price'] * $qty;
+                $total_price +=$product['price'] * $qty;
             }
         }
         return $total_price;
