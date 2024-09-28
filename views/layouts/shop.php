@@ -54,7 +54,7 @@
 <tr>
     <td id="footer-td">
         <div align="center">
-            <div class="footer">&copy; mysite.com 2012</div>
+            <div class="footer">&copy; My site <?= date('Y')?></div>
         </div>
     </td>
 </tr>

@@ -42,6 +42,7 @@ if($_SESSION['cart']){
     </table>
     <p class="total" align="center">Общая сумма заказа: <span class="product-price">' .number_format($_SESSION['total_price'], 2) . '$</span></p>
     <p align="center"><input type="submit" name="update" value="Обновить" /></p>
+    <p align="center"><a href="index.php?view=orders">оформить заказ</a> </p>
 
 </form>';
 }
