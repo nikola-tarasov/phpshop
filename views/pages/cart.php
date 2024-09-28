@@ -1,7 +1,7 @@
 <h2 align="center">Ваша корзина товаров</h2>
 <?php
 
-if(isset($_SESSION['cart'])){
+if($_SESSION['cart']){
     echo '
 <form action="index.php?view=update_cart" method="post" id="cart-form">
 
