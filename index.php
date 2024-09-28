@@ -112,7 +112,7 @@ switch ($view){
 
 }
 //защита от некорректного ввода в адресную строку
-$arr = ['add_to_cart', 'cat', 'product', 'cart'];
+$arr = ['add_to_cart', 'cat', 'product', 'cart' , 'index', 'orders'];
 
 if(!in_array($view, $arr)) die("Страница не найдена");
 
