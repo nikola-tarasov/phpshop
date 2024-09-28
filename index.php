@@ -111,8 +111,12 @@ switch ($view){
         break;
 
 }
+//защита от некорректного ввода в адресную строку
+$arr = ['add_to_cart', 'cat', 'product', 'cart'];
 
-include $_SERVER['DOCUMENT_ROOT'] . '/views/layouts/shop.php';
+if(!in_array($view, $arr)) die("Страница не найдена");
+
 //подлючение шаблона верстки
+include $_SERVER['DOCUMENT_ROOT'] . '/views/layouts/shop.php';
 
 
